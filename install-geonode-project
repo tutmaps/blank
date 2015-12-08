@@ -3,3 +3,32 @@
 $ django-admin.py startproject TUI --template=https://github.com/GeoNode/geonode-project/archive/master.zip -epy,rst
 
 $ sudo pip install -e TUI
+
+Copy /etc/geonode/local_settings.py to /path/to/my/geonode/local_settings.py and edit it's content by setting the SITEURL and SITENAME
+
+Rename (mv) /etc/geonode/local_settings.py to /etc/geonode/local_settings.py.back
+
+Edit the file /etc/apache2/sites-available/geonode.conf and change the following directive from:
+
+WSGIScriptAlias / /var/www/geonode/wsgi/geonode.wsgi
+to:
+WSGIScriptAlias / /path/to/TUnode/TUnode/wsgi.py
+
+Add the "Directory" directive for your folder like the following example:
+
+<Directory "/home/vagrant/TUnode/TUnode/">
+   Order allow,deny
+    Options Indexes FollowSymLinks
+    Allow from all
+    Require all granted
+    IndexOptions FancyIndexing
+</Directory>
+
+Restart apache:
+$ sudo service apache2 restart
+
+Edit the templates in my_geonode/templates, the css and images to match your needs.
+
+In the my_geonode folder run:
+
+$ python manage.py collectstatic
