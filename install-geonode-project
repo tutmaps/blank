@@ -1,0 +1,5 @@
+## Create a new template based on the installed Geonode project
+
+$ django-admin.py startproject TUI --template=https://github.com/GeoNode/geonode-project/archive/master.zip -epy,rst
+
+$ sudo pip install -e TUI
