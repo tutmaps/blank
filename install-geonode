@@ -1,0 +1,11 @@
+## prerequisites - Ubuntu server 14.04 64bit on VMware
+
+$ sudo add-apt-repository ppa:geonode/stable
+
+$ sudo apt-get update
+
+$ sudo apt-get install geonode
+
+$ sudo geonode-updateip 127.0.0.1
+
+$ geonode createsuperuser
