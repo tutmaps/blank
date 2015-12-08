@@ -1,0 +1,26 @@
+## connect PGadmin III to Geonode PostGIS database
+## prerequisite - portableGIS on USB drive
+
+Get database name, user and password from local_settings.py
+
+Edit /etc/postgresql/9.3/main/postgresql.conf to uncomment listen_addresses and add host
+  listen_addresses = '192.168.0.31/,localhost'
+
+Server connection - Properties
+
+Name - GeoNode
+Host - localhost
+Port - 5432
+Service - (blank)
+Maintenance DB - geonode
+Username - geonode
+Password - 
+
+Server connection - SSH Tunnel
+
+Use SSH tunneling - tick
+Tunnel host - 192.168.20.45
+Username - geo
+Authentication - Password
+Identity file - (blank)
+Password - 
