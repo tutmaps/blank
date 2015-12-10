@@ -1,0 +1,17 @@
+In QGIS add plugin OpenGeo Explorer
+
+# PostGIS on USB connection parameters
+Name - TUI
+Host - 127.0.0.1
+Port - 5434
+Database - TUI
+User name - pgis
+Password - pgis
+
+# PostGIS on Ubuntu connection parameters
+Name - geonode_data
+Host - 192.168.20.45
+Port - 5432
+Database - geonode_data
+User name - geonode
+Password - 
