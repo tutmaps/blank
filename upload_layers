@@ -1,5 +1,13 @@
 # Upload data from QGIS to Geonode/Geoserver PostGIS Database
-#assumes data already uploaded from QGIS
+
+### For importing ESRI file geodatabase layer in QGIS
+Within QGIS Processing Toolbox
+-GDAL/OGR
+  -OGR Miscellaneous
+    -Import Vector into PostGIS
+
+### For importing Geojson & others
+use OpenGeo Explorer
 
 On Geoserver webpage select Layers
 select Add a new resource
