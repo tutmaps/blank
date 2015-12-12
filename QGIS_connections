@@ -1,4 +1,7 @@
-In QGIS add plugin OpenGeo Explorer
+# In QGIS add plugin OpenGeo Explorer
+from Settings add new plugin repository
+Name = Boundless Plugin repository
+url = http://qgis.boundlessgeo.com/plugins.xml
 
 # PostGIS on USB connection parameters
 Name - TUI
@@ -14,4 +17,6 @@ Host - 192.168.20.45
 Port - 5432
 Database - geonode_data
 User name - geonode
-Password - 
+Password - (local_settings.py)
+
+!!!!! Add symbology to Geoserver prior to uploading layers
