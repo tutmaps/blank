@@ -1,0 +1,9 @@
+# Upload data from QGIS to Geonode/Geoserver PostGIS Database
+#assumes data already uploaded from QGIS
+
+On Geoserver webpage select Layers
+select Add a new resource
+Add layer from: select geonode:datastore
+select Publish
+define bounds and style
+from command line run "geonode updatelayers"
