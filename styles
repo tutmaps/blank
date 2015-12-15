@@ -1,0 +1,5 @@
+#Point symbols
+
+create *.svg in Inkscape
+save as regular svg
+upload svg to /usr/share/geoserver/data/styles/img
